@@ -1,0 +1,12 @@
+.container {
+  width: 210px;
+}
+
+.input {
+  margin-bottom: 10px;
+}
+
+.button {
+  text-align: left;
+  margin-top: 5px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Finding the Prime Numbers from Euler's Equation</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="/calculate" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+        <div class="input">
+          <label>What number of prime number do you wish to access?:</label>
+          <input type="number" name="prime_number"></input>
+        </div>
+        <div class="input">
+          <label>How many digits in the expansion of Euler's formula?:</label>
+          <input type="number" name="digits"></input>
+        </div>
+        <div class="file_upload">
+          <input id="fileSelect" type="file" accept=".csv" name="csv" />
+        </div>
+        <div class="button">
+          <input id="submit-button" type="submit" value="Calculate" />
+        </div>
+      </form>
+      <% if @euler %>
+        <div class="result">
+          <h3>Result:</h3>
+          <ul class='result'>
+            <% @results.each do |result| %>
+              <li>
+                <%= result %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+    </div>
+  </body>
+</html>
