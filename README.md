@@ -8,11 +8,11 @@
   - Note: column 1 corresponds with the number of digits, column 2 corresponds with the Nth prime number
 - When the button is clicked, it will find the Xth prime number that has Y digits in the expansion of Euler's number.
 - If a file (csv) is uploaded, it will go through all the rows of numbers and do the same thing, displaying all the results.
-- The most diffcult (computationally) tuple you should expect is 2, 10
-- Deliverable: a git repo that can be cloned w/ a readme that tell the user how to start it up and run it on their local machine.
+- The most difficult (computationally) tuple you should expect is 2, 10
+- Deliverable: a git repo that can be cloned w/ a Readme that tell the user how to start it up and run it on their local machine.
 
 ## Starting up
 - Clone Repo
 - Make sure you are inside the newly closed rails app directory
-- Run ```bundle install```
-- Run ```rails server``` and open browser to http:localhost:3000
+- Run ```bundle install``` in terminal
+- Run ```rails server``` in terminal and open browser to http:localhost:3000
