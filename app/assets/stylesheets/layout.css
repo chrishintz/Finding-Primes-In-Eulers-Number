@@ -1,13 +1,9 @@
 body {
-  background-color: #eee;
-}
-
-.container {
-  width: 34%;
+  background-color: #fff;
 }
 
 .outline {
-  background-color: #33acb2;
+  background-color: #373F51;
   border: 1px solid #eee;
   border-radius: 10px;
   margin: 20px;
@@ -31,7 +27,7 @@ input[type='file']::-webkit-file-upload-button {
 }
 
 .calculate {
-  background: #031A6B;
+  background: #33acb2;
   border: none;
   color: #fff;
   display: inline-block;
