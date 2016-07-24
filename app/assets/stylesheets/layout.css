@@ -53,6 +53,6 @@ input[type='file']::-webkit-file-upload-button {
 .results {
   font-size: 16px;
   font-weight: 500;
-  background-color: #F46036;
+  background-color: inherit;
   color: #fff;
 }
