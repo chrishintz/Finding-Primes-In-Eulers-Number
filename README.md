@@ -14,5 +14,5 @@
 ## Starting up
 - Clone Repo
 - Make sure you are inside the newly closed rails app directory
-- Run ```bundle install``` in terminal
-- Run ```rails server``` in terminal and open browser to http:localhost:3000
+- Run ```bundle install```
+- Run ```rails server``` and open browser to http:localhost:3000
