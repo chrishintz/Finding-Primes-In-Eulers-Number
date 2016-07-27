@@ -11,6 +11,7 @@ require "action_view/railtie"
 require "action_cable/engine"
 require "sprockets/railtie"
 require "./lib/euler.rb"
+require "/.lib/array_math.rb"
 # require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems

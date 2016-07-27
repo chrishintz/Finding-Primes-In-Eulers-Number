@@ -13,10 +13,11 @@ class Euler
 
   def calculate_eulers_constant
     @euler_number = 0
-    (0..500).each do |i|
-      @euler_number += (BigDecimal.new(1)/BigDecimal.new(factorial(i)))
+    (0..5).each do |i|
+      @euler_number.to_s.chars += (BigDecimal.new(1)/BigDecimal.new(factorial(i)))
     end
-    @euler_array = @euler_number.to_s.split('.')[1].chars
+    @euler_number
+    # @euler_array = @euler_number.to_s.split('.')[1].chars
   end
 
   def calculate(digits, prime_number)
