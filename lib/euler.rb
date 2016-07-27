@@ -11,12 +11,32 @@ class Euler
     end
   end
 
-  def calculate_eulers_constant
-    @euler_number = 0
-    (0..5).each do |i|
-      @euler_number.to_s.chars += (BigDecimal.new(1)/BigDecimal.new(factorial(i)))
+  def denominator
+    @denominator = 0
+    @denominator_array = []
+    (0..50).each do |i|
+      @denominator += factorial(i)
+      @denominator_array << factorial(i)
     end
-    @euler_number
+    @denominator
+    # @denominator_array
+  end
+
+  def numerator
+    @numerator = 0
+    @denominator_array.each do |i|
+      @numerator += (factorial(50)/i)
+    end
+    @numerator
+  end
+
+  def calculate_eulers_constant
+    @euler_constant = (BigDecimal.new(@numerator)) / (BigDecimal.new(@denominator))
+    # @euler_number = 0
+    # (0..5).each do |i|
+    #   @euler_number += (BigDecimal.new(1)/BigDecimal.new(factorial(i)))
+    # end
+    # @euler_number
     # @euler_array = @euler_number.to_s.split('.')[1].chars
   end
 
