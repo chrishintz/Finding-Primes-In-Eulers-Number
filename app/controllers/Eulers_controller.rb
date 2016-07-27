@@ -1,5 +1,7 @@
 class EulersController < ApplicationController
   require 'csv'
+  require 'mathn'
+  require 'bigdecimal'
 
   def index
   end
